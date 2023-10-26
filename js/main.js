@@ -1,4 +1,4 @@
-/* Olio Theme Scripts */
+/* Astra Theme Scripts */
 
 (function($){ 
     "use strict";
@@ -26,64 +26,37 @@
 	});
 
 /*=========================================================================
-        Mobile Menu
+    Mobile Menu
 =========================================================================*/  
     $('.menu-wrap ul.nav').slicknav({
         prependTo: '.header-section .navbar',
         label: '',
         allowParentLinks: true
     });          
+
 /*=========================================================================
-    Feature Carousel
+    Review Carousel
 =========================================================================*/
-	$('#feature-carousel').owlCarousel({
+	$('#review-carousel').owlCarousel({
         loop: true,
         margin: 15,
         autoplay: true,
         smartSpeed: 500,
         items: 1,
-        nav: true,
-        navText: ['<i class="arrow_carrot-left"></i>', '<i class="arrow_carrot-right"></i>'],
-        dots: false,
+        nav: false,
+        dots: true,
         responsive : {
 			0 : {
 				items: 1,
 			},
 			480 : {
-				items: 2,
-			},
-			768 : {
-				items: 2,
-			},
-			992 : {
-				items: 4
-			}
-		}
-    }); 
-/*=========================================================================
-    Testimonial Carousel
-=========================================================================*/
-	$('#testimonial-carousel').owlCarousel({
-        loop: true,
-        margin: 15,
-        autoplay: true,
-        smartSpeed: 500,
-        items: 1,
-        nav: true,
-        navText: ['<i class="arrow_carrot-left"></i>', '<i class="arrow_carrot-right"></i>'],
-        dots: false,
-        responsive : {
-			0 : {
 				items: 1,
-			},
-			480 : {
-				items: 2,
 			},
 			768 : {
 				items: 2
 			},
 			992 : {
-				items: 3
+				items: 2
 			}
 		}
     }); 
@@ -118,15 +91,7 @@
             prevEl: '.swiper-prev',
         },
         spaceBetween: getSlideSpace()
-    });  
-             
-/*=========================================================================
-    Active venobox
-=========================================================================*/
-	$('.img-popup').venobox({
-		numeratio: true,
-		infinigall: true
-	});                 
+    });                
              
 /*=========================================================================
 	Initialize smoothscroll plugin
