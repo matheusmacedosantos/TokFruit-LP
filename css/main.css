@@ -361,13 +361,14 @@ button {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: #ff0844;
+    background: linear-gradient(to right, #6E0BD6, #163AE6); /* Adiciona um gradiente */
     height: 100%;
     width: 100%;
     -webkit-transition: all .5s .5s ease;
     -moz-transition: all .5s .5s ease;
     transition: all .5s .2s ease;
 }
+
 
 .loader {
     position: absolute;
@@ -1524,7 +1525,7 @@ ul.nav>li>a.active {
    Footer Section
    ========================================================================== */
 .footer-section {
-    background-color: #dd3b5b;
+    background-color: #DD2E44;
     display: block;
     color: #fff;
     text-align: center;
@@ -1572,3 +1573,14 @@ ul.nav>li>a.active {
     width: 64px;
     height: 64px;
 }
+
+.icon {
+
+    height: auto;
+
+}
+
+.icon path {
+    fill: #ffffff;
+}
+
